@@ -1,21 +1,32 @@
 {
-  "name": "r6api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bluebird": "^3.5.1",
-    "debug": "^3.1.0",
-    "dotenv": "^5.0.1",
-    "lodash.merge": "^4.6.0",
-    "node-fetch": "^1.7.3"
-  }
+    "name": "r6api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "build/index.js",
+    "declaration": "build/index.d.ts",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc -w",
+        "docs": "typedoc --out docs --name R6Api index.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bluebird": "^3.5.1",
+        "debug": "^3.1.0",
+        "lodash.merge": "^4.6.0",
+        "node-fetch": "^1.7.3",
+        "typedoc": "^0.11.1",
+        "typescript": "^2.8.3"
+    },
+    "devDependencies": {
+        "@types/bluebird": "^3.5.20",
+        "@types/debug": "^0.0.30",
+        "@types/lodash.merge": "^4.6.3",
+        "@types/node-fetch": "^1.6.9"
+    }
 }
