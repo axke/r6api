@@ -17,5 +17,10 @@
     "dotenv": "^5.0.1",
     "lodash.merge": "^4.6.0",
     "node-fetch": "^1.7.3"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
 }
